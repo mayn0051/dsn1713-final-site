@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: 0;
+}
+
+:root {
+    /* Color Variables */
+    --primary-color: #003468;
+    /* Blue */
+    --secondary-color: #d79147;
+    /* Brown */
+    --text-color: #1f1795;
+    /* Dark Gray */
+    --light-text-color: #d7bb2c;
+    /* Light Gray */
+    --background-color: #f8f9fa;
+    /* Light Background */
+    --white: #fff;
+
+    /* Typography */
+    --font-family: 'Arial', sans-serif;
+    --heading-font-size: 2rem;
+    --menu-heading-font-size: 1.5rem;
+    --body-font-size: 1rem;
+
+    /* Spacing */
+    --section-padding: 40px;
+    --card-border-radius: 10px;
+
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+/* Navbar Styling */
+.home.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar .btn-success {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.navbar .btn-success:hover {
+    background-color: #157347;
+    /* Darker green */
+    border-color: #14532d;
+}
+
+/* Hero Section */
+.hero-section-home {
+    background: var(--primary-color);
+    color: var(--white);
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.hero-section-home h1 {
+    font-size: 2.5rem;
+}
+
+.hero-section-home p {
+    font-size: 1.1rem;
+}
+
+.hero-section-home .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.hero-section-home .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Weekly Events Section */
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    color: var(--white);
+}
+
+.btn.ps-0 {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* Menus Section */
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.card-text {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.card .btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.card .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Booking Section */
+.py-5.text-center {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.py-5.text-center .btn-light {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.py-5.text-center .btn-light:hover {
+    background-color: #e2e6ea;
+    color: var(--dark-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    color: var(--white);
+    padding: 2rem 0;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+}
+
+.footer .mt-3 p {
+    font-size: 0.9rem;
+    color: var(--light-color);
+}
+
+.hero-section-menu {
+    background: url('/images-web/menu-section.jpg') no-repeat center center / cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    font-size: 1.5rem;
+}
+
+.menu-section {
+    background-color: var(--white);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--card-border-radius);
+    padding: var(--section-padding);
+    margin: var(--section-padding) auto;
+    max-width: 900px;
+}
+
+.menu-section h2 {
+    color: var(--primary-color);
+    font-size: var(--heading-font-size);
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item h5 {
+    font-size: var(--menu-heading-font-size);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.menu-item p {
+    font-size: var(--body-font-size);
+    color: var(--light-text-color);
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--white);
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 0;
+    font-size: calc(var(--body-font-size) - 0.1rem);
+}
+
+.events-home {
+    background: url('/images-web/events.jpg') no-repeat center center / cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    font-size: 1.5rem;
+}
+
+.events h1 {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        font-size: 1.25rem;
+        height: 300px;
+    }
+
+    .menu-section {
+        padding: 20px;
+    }
+
+    .menu-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .menu-item h5 {
+        font-size: 1.1rem;
+    }
+
+    .menu-item p {
+        font-size: 0.9rem;
+    }
+}
